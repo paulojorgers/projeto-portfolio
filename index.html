@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" href="assets/icons/favicon PJ2.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/header-hero.css">
+    <link rel="stylesheet" href="./assets/styles/main-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="menu-header">
+            <div class="logo">
+                <a href="">
+                    <img src="assets/icons/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menu-links">
+                <a href="">Início</a>
+                <a href="">Sobre mim</a>
+                <a href="">Portfólio</a>
+                <a href="">Tecnologias</a>
+                <a class="menu-hidden" href="#">Contato</a>
+            </div>
+            <div class="button-menu">
+                <button class="button__menu-primeiro">
+                    <a href="#">Contato</a>
+                </button>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <section class="hero-section">
+                <h1>Paulo Jorge Rodrigues</h1>
+                <p>Web Developer</p>
+            </section>
+            <section class="social-icons">
+                <div>
+                    <a href="https://www.behance.net/paulorodrigues07"><i class="fa-brands fa-square-behance"></i></a>
+                </div>
+                <div>
+                    <a href="#"> <i class="fa-brands fa-github"></i> </a>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </section>
+
+            <section class="arrow-down">
+                <i class="fa-solid fa-arrow-down-long"></i>
+            </section>
+        </div>
+
+        <div class="about-me">
+            <section class="about-me__img">
+                <img src="assets/icons/img-blue.jpeg" alt="">
+            </section>
+            <section class="about-me__content">
+                <div class="about-me__content-text">
+                    <h1>Sobre <span class="mim-color"> mim </span></h1>
+                    <p>Hello! I'm Paulo Jorge. I'm a web developer, and I'm very passionate and dedicated to my work.
+                        With 5 years experience as a professional web developer, I have acquired the skills and
+                        knowledge necessary to make your project a success. I enjoy every step of the design process,
+                        from discussion and collaboration.</p>
+                </div>
+                <div class="about-me__content-icons">
+                    <div class="about-me__content-icons__item">
+                        <p><i class="fa-solid fa-angles-right"></i> texto 1</p>
+                        <p><i class="fa-solid fa-angles-right"></i> texto 2 </p>
+                    </div>
+                    <div class="about-me__content-icons__item">
+                        <p><i class="fa-solid fa-angles-right"></i>texto 3</p>
+                        <p><i class="fa-solid fa-angles-right"></i>texto 4</p>
+                    </div>
+                </div>
+                <div class="about-me__content-button">
+                    <button>Donwload CV</button>
+                </div>
+        </div>
+
+        <div class="jobs">
+            <section class="jobs__title">
+                <div class="jobs__title-text">
+                    <h1>Alguns <span class="mim-color"> Trabalhos </span></h1>
+                </div>
+            </section>
+            <!-- <section class="jobs__content">
+                <div class="jobs__content-item">
+                    <div class="jobs__content-item-img">
+
+                    </div>
+                    <div class="jobs__content-item-img">
+
+                    </div>
+                    <div class="jobs__content-item-img">
+
+                    </div>
+                    <div class="jobs__content-item-img">
+
+                    </div>
+                    <div class="jobs__content-item-img">
+
+                    </div>
+                    <div class="jobs__content-item-img">
+
+                    </div>
+                </div>
+            </section> -->
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="assets/icons/jobs/1.png" alt="Site shingle Brasil em mockup" onclick="openModal(this)">
+                    <!-- <div class="overlay">
+                        <div class="overlay__text">
+                            <h2>Trabalho 1</h2>
+                            <p>Descrição do trabalho 1</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/icons/jobs/2.png" alt="Site solid company em mockup" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/icons/jobs/6.png" alt="Site audio plus em mockup" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/icons/jobs/3.png" alt="Site mooris store em mockup" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/icons/jobs/5.png" alt="Site destak Brasil em mockup" onclick="openModal(this)">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/icons/jobs/4.png" alt="Site skate course em mockup" onclick="openModal(this)">
+                </div>
+
+
+            </div>
+            <!-- Modal para exibir a imagem ampliada -->
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- link para java script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

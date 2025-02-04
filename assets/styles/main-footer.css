@@ -1,0 +1,330 @@
+/* ABOUT ME */
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 6rem;
+    background-color: #fff;
+    height: 750px;
+    width: 100%;
+    padding: 8rem;
+    /* border: 1px solid red; */
+}
+
+.about-me .about-me__img {
+    display: flex;
+    justify-content: right;
+    width: 31%;
+    /* border: 1px solid red; */
+}
+
+.about-me .about-me__img img {
+    width: 380px;
+    border-radius: 0.3rem;
+    filter: grayscale(100%);
+}
+
+.about-me .about-me__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 2rem;
+    width: 48%;
+    color: black;
+}
+
+.about-me__content .about-me__content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-me__content .about-me__content-text h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.mim-color {
+    color: #F2600C;
+}
+
+.about-me__content .about-me__content-text p {
+    width: 90%;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.about-me__content-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem;
+}
+
+.about-me__content-icons__item {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.fa-solid {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-me__content-button button {
+    height: 2.5rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background:
+        linear-gradient(-45deg, #ffffff, #F2600C, #ffffff);
+    background-size: 400%;
+    background-position: 90% 0;
+    color: #000000;
+    transition: background 0.8s;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.about-me__content-button button:hover {
+    background-position: 185% 50%;
+}
+
+
+/* JOBS */
+
+.jobs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 8rem 0;
+    /* border: 1px solid red; */
+}
+
+.jobs .jobs__title {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 65%;
+    color: #000000;
+    padding-bottom: 5rem;
+}
+
+.jobs .jobs__title h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.jobs .jobs__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 65%;
+    /* border: 1px solid red; */
+
+}
+
+.jobs__content-item {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* grid-template-columns: repeat(auto, auto);
+    grid-template-rows: repeat(auto, auto); */
+    gap: 55px;
+    max-width: 100%;
+}
+
+.jobs__content-item-img {
+    width: 330px;
+    height: 330px;
+    background-image: url(../icons/jobs/shingle.png);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+
+/* GALERRY */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 10px;
+    width: 67.5%;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.gallery-item .overlay {
+    display: none;
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .about-me {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 4rem 0rem;
+    }
+
+    .about-me .about-me__img {
+        width: 90%;
+        justify-content: center;
+        /* padding-top: 4rem; */
+    }
+
+    .about-me .about-me__img img {
+        width: 200px;
+    }
+
+    .about-me .about-me__content {
+        text-align: center;
+        width: 90%;
+    }
+
+    .about-me .about-me__content h1 {
+        padding-top: 1rem;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .about-me .about-me__content p {
+        text-align: justify;
+        width: 100%;
+
+    }
+
+    .about-me__content-icons {
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    /* JOBS */
+
+    .jobs {
+        padding: 4rem 0;
+    }
+
+    .jobs .jobs .jobs__content {
+        width: 96%;
+    }
+
+    .jobs .jobs__title {
+        width: 96%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .jobs .jobs__title h1 {
+        width: 100%;
+        font-size: 1.3rem;
+
+    }
+
+    .jobs__content-item {
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+    /* GALLERY */
+
+
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery-item {
+        flex: 1 1 calc(50% - 20px);
+
+}
+}
+
+
+
+
+@media (max-width: 1024px) {}

@@ -1,0 +1,256 @@
+body {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+}
+
+
+.menu-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 11.5rem; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #030303;
+    padding: 1rem 0rem;
+}
+
+.menu-header .logo {
+    width: 9rem;
+}
+
+.menu-header .logo:hover {
+    filter: saturate(2);
+}
+
+.menu-header .menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+
+.menu-header .menu-links a:hover {
+    color: #eb722b;
+}
+
+/* .menu-header .button-menu {
+    background-color: transparent;
+    border: solid 0.5px #41CAD9;
+    padding: 0rem 1.5rem;
+    border-radius: 3px;
+} */
+
+.button__menu-primeiro {
+    height: 2.5rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: 
+        linear-gradient(
+            -45deg, #F2600C, #088b99, #F2600C
+        );
+    background-size: 400%;
+    background-position: 90% 0;
+    color: #ffffff;
+    transition: background 0.8s;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.button__menu-primeiro:hover {
+    background-position: 185% 50%;
+}
+
+
+/* Ajuste para o hambúrguer e menu no mobile */
+.hamburger {
+    display: none;
+}
+
+.menu-hidden {
+    display: none;
+}
+
+
+/* MAIN */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 910px;
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.801), rgb(0, 0, 0)),
+                        url('../icons/backgrund-hero.webp');
+    background-size: cover;
+    
+    /* border-bottom: 1px solid red; */
+}
+
+.hero .hero-section {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+@keyframes brilho {
+    0% { background-position: -200%; }
+    100% { background-position: 200%; }
+}
+
+
+.hero .hero-section h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    background: linear-gradient(120deg, #fff 0%, #5e5e5e 50%, #fff 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text; /* Compatibilidade para navegadores WebKit */
+    background-clip: text; /* Padrão */
+    animation: brilho 15s linear infinite;
+}
+
+.hero .hero-section p {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 30%;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.fa-square-behance {
+    color: #1e48ee;
+}
+
+.fa-square-behance:hover {
+    color: #0033ff;
+}
+
+.fa-github {
+    color: #fff;
+}
+
+.fa-github:hover {
+    color: #c9c9c9;
+}
+
+.fa-linkedin {
+    color: #4487dd;
+}
+
+.fa-linkedin:hover {
+    color: #0064e7;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Move para baixo */
+    }
+    100% {
+        transform: translateY(0); /* Volta ao normal */
+    }
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    transform: translateX(-50%);
+    animation: moveDown 1s ease-in-out infinite; /* Aplica a animação */
+}
+
+
+
+/* Oculta o menu no mobile */
+@media (max-width: 767px) {
+    .menu-links {
+        display: none; /* Mantém o menu oculto inicialmente */
+        flex-direction: column;
+        position: absolute;
+        top: 90px; /* Posiciona o menu abaixo do hambúrguer */
+        right: 2px;
+        background-color: rgb(17, 17, 17);
+        width: 200px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+        opacity: 0; /* Inicia invisível */
+        transition: opacity 0.3s ease, top 0.3s ease; /* Suaviza a transição */
+    }
+
+    .menu-links.active {
+        display: flex; /* Exibe o menu */
+        opacity: 1; /* Torna o menu visível */
+        top: 90px; /* Fixa o menu na posição abaixo do hambúrguer */
+        /* right: 1rem; */
+    }
+    
+
+    .menu-links a {
+        display: block;
+        text-align: center;
+        padding: 0rem;
+    }
+    
+    /* .menu-links a:hover {
+        background-color: #2F2F2F;
+        padding: 1rem;
+    } */
+
+    /* Estilizando o ícone do menu hambúrguer */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+        position: relative;
+        color: #fff;
+        margin-right: 1rem;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 4px;
+        background: rgb(255, 255, 255);
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    .button-menu {
+        display: none;
+        color: #fff;
+    }
+
+
+    /* HERO SECTION */
+
+    .hero {
+        height: 800px;
+        padding: 0 0.5rem;
+    }
+    .hero .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}

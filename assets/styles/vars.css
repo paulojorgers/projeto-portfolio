@@ -1,0 +1,25 @@
+:root {
+
+    /* Colors */
+    --text-base-dark: #000;
+    --text-base-light: #fff;
+    --text-sub: #F2F2F2;
+    --text-destaque-azul: #41CAD9;
+    --text-destaque-azulClaro: #05F2DB;
+    --text-destaque-laranja: #F2600C;
+
+    --bg2: #030303;
+
+    /* Fonts */
+
+    --font-sora-sans: 'Sora', sans-serif;
+
+}
+
+    /* MEDIA QUERYS */
+    
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 1274px) {
+}

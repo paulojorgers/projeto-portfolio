@@ -1,0 +1,63 @@
+/* Reset CSS Moderno */
+
+/* Remove margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Garante que o HTML ocupe toda a altura da tela */
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Define estilos básicos para o body */
+body {
+    min-height: 100vh;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove a decoração de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Define listas sem estilos padrões */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove estilos padrão de botões e inputs */
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Garante que imagens não extrapolem seus contêineres */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Define um comportamento consistente para elementos de formulário */
+button {
+    cursor: pointer;
+}
+
+/* Remove estilos padrões do elemento table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
