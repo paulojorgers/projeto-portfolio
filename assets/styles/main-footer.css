@@ -22,7 +22,7 @@
 
 .about-me .about-me__img img {
     width: 380px;
-    border-radius: 0.3rem;
+    border-radius: 5;
     filter: grayscale(100%);
 }
 
@@ -122,36 +122,6 @@
     letter-spacing: 0.5rem;
 }
 
-.jobs .jobs__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-    width: 65%;
-    /* border: 1px solid red; */
-
-}
-
-.jobs__content-item {
-    width: 100%;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* grid-template-columns: repeat(auto, auto);
-    grid-template-rows: repeat(auto, auto); */
-    gap: 55px;
-    max-width: 100%;
-}
-
-.jobs__content-item-img {
-    width: 330px;
-    height: 330px;
-    background-image: url(../icons/jobs/shingle.png);
-    background-size: cover;
-    border-radius: 5px;
-}
-
 
 
 /* GALERRY */
@@ -206,6 +176,13 @@
     display: block;
     width: 80%;
     max-width: 700px;
+}
+
+.gallery-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 3rem;
 }
 
 #caption {
