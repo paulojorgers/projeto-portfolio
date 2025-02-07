@@ -22,7 +22,7 @@
 
 .about-me .about-me__img img {
     width: 380px;
-    border-radius: 5;
+    border-radius: 5px;
     filter: grayscale(100%);
 }
 
